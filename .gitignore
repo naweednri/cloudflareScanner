@@ -1,3 +1,5 @@
 #exclude build directory
 build/*
+#exclude cloudflareScanner.pro.user
+cloudflareScanner.pro.user
 
