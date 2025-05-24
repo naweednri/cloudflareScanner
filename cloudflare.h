@@ -2,19 +2,22 @@
 #define CLOUDFLARE_H
 #include <iostream>
 #include <vector>
-class cloudflare
+#include <QString>
+#include <QObject>
+class QNetworkAccessManager;
+class cloudflare : public QObject
 {
+    Q_OBJECT
 public:
-    cloudflare(std::string url);
+    cloudflare(const QString url);
     ~cloudflare();
-    bool run() const;
+    bool run();
 private:
-    std::string* scrape();
+    QNetworkAccessManager* _manager;
+    QString* scrape();
     bool IPsBySubnet(std::string_view rawIPs);
     std::vector<std::string>* _IPv4;
     std::vector<std::string>* _IPv6;
-    const std::string _url;
-
+    const QString _url;
 };
-
 #endif // CLOUDFLARE_H

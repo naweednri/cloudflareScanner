@@ -6,6 +6,8 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
-    w.show();
+    cloudflare obj("https://www.cloudflare.com/ips-v4/#");
+    obj.run();
+    //w.show();
     return a.exec();
 }
