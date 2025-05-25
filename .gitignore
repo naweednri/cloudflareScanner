@@ -2,4 +2,6 @@
 build/*
 #exclude cloudflareScanner.pro.user
 cloudflareScanner.pro.user
+#exclude vscode configuration
+.vscode
 
