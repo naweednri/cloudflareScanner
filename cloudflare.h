@@ -21,9 +21,9 @@ private:
     QNetworkAccessManager* _manager;
     QString* scrape();
     std::vector<QString> parseIP(QString* scraped,IP type);
-    bool IPsBySubnet(std::string_view rawIPs);
-    std::vector<std::string>* _IPv4;
-    std::vector<std::string>* _IPv6;
+    bool IPsBySubnet(QStringView rawIPs);
+    std::vector<QString> _IPv4;
+    std::vector<QString> _IPv6;
     const QString _url;
 };
 #endif // CLOUDFLARE_H
