@@ -20,8 +20,8 @@ public:
 private:
     QNetworkAccessManager* _manager;
     QString* scrape();
-    std::vector<QString> parseIP(QString* scraped,IP type);
-    bool IPsBySubnet(QStringView rawIPs);
+    void parseIP(QString* scraped,IP type);
+    void IPsBySubnet(QStringView rawIPs);
     std::vector<QString> _IPv4;
     std::vector<QString> _IPv6;
     const QString _url;
