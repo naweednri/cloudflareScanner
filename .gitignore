@@ -4,4 +4,6 @@ build/*
 cloudflareScanner.pro.user
 #exclude vscode configuration
 .vscode
+#exclude .CMakeLists.txt.user
+CMakeLists.txt.user
 
