@@ -15,6 +15,8 @@ qt_add_executable(cloudflareScanner
     ping.cpp
     ping.h
     mainwindow.ui
+    icmp_header.h
+    ipv4_header.h
 )
 set_property(TARGET cloudflareScanner PROPERTY CXX_STANDARD 23)
 set_property(TARGET cloudflareScanner PROPERTY CXX_STANDARD_REQUIRED On)
