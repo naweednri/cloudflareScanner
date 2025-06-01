@@ -16,7 +16,9 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
+public slots:
+    void BtnStart_Clicked();
+    void BtnFetch_Clicked();
 private:
     Ui::MainWindow *ui;
 };
